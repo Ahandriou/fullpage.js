@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a class="id_1 active-link" href="#Premiere">Premiere section</a></li>
+    <li data-menuanchor="secondPage"><a class="id_2" href="#Seconde">Seconde section</a></li>
+    <li data-menuanchor="3rdPage"><a class="id_3" href="#3eme">3eme section</a></li>
+    <li data-menuanchor="4thPage"><a class="id_4" href="#4eme">4eme section</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section active" id="section0"><h1><a id="link1_0" href="#">Lien vers la section 2.1</a></h1></div>
+
+	<div class="section" id="section1">
+	    <div class="slide"><h1>Section 2.0</h1></div>
+	    <div class="slide"><h1><a id="link2_1" href="#">Lien vers la section 3.2</a></h1></div>
+	    <div class="slide"><h1>Section 2.2</h1></div>
+	    <div class="slide"><h1>Section 2.3</h1></div>
+	</div>
+
+	<div class="section" id="section2">
+      <div class="slide"><h1>Section 3.0</h1></div>
+	    <div class="slide">
+
+        <div class="text">
+          <h1>" Midjourney crée 240 publicités en quelques minutes "</h1>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit leo ac nisi sollicitudin, at rutrum felis commodo. Donec ac lorem eget tortor luctus bibendum.</h4>
+          <p>Nunc in sollicitudin diam. Fusce vitae elit ipsum. Praesent et lacus sit amet nulla pellentesque bibendum et ut purus. Suspendisse eget consequat ligula. Sed dui leo, sollicitudin a urna pulvinar, feugiat placerat odio. Nulla consectetur libero sit amet ante venenatis sodales. Vestibulum lacinia lorem ex, id facilisis erat imperdiet vitae. Vestibulum mattis lacinia nisl, eget sollicitudin leo viverra at. Curabitur sed eleifend nulla. In varius nisi sit amet congue bibendum. Donec eu purus eu dui tempor posuere. Sed vitae odio id ipsum ornare ultrices eu vitae libero. Curabitur in nisi mauris.</p>
+        </div>
+
+        <div class="photo">
+          <img src="img/midjourney.jpg" alt="">
+        </div>
+        
+      </div>
+	    <div class="slide"><h1><a id="link3_2" href="#">Lien vers la section 4</a></h1></div>
+  </div>
+	<div class="section" id="section3"><h1><a id="link4_0" href="#">Lien vers la section 1</a></div>
+</div>
+
+<!-- <script type="text/javascript">
+  afterSlideLoad: function(section, origin, destination, direction, trigger){
+    var params = {
+        section: section,
+        origin: origin,
+        destination: destination,
+        direction: direction,
+        trigger: trigger
+    };
+
+    addToLog('afterSlideLoad', params);
+
+    console.log("--- afterSlideLoad ---");
+    console.log(params);
+    console.log("----------------");
+
+    deleteLog = true;
+  },
+  afterLoad: function(origin, destination, direction, trigger){
+    var params = {
+        origin: origin,
+        destination: destination,
+        direction: direction, 
+        trigger: trigger
+    };
+    addToLog('afterLoad', params);
+
+    console.log("--- afterLoad ---");
+    console.log(this);
+    console.log('===============');
+
+    deleteLog = true;
+  }
+</script> -->
+
+
+<!-- scripts ------------------------------------------------------------------------------------------ -->
+
+<!-- <script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+	});
+</script> -->
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</body>
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
